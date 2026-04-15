@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+    <aside class="sidebar">
+        <h4>Graphle</h4>
+        <div class="button-list">
+            <button id="help">?</button>
+            <button id="graph">Graph</button>
+        </div>
+        <div class="equation-list" >
+            <div id="eq-list">
+            </div>
+            <button id="new-eq-btn" class="new-line-btn">+</button>
+        </div>
+    </aside>
+    
+    <p id="output"></p>
+    <div class="graph-container">
+        <canvas style="border: 1px solid black;" id="canvas"></canvas>
+
+    </div>
+
+    
+    
+</div>
+<div class="overlay" id="popup-help">
+    <div class="popup">
+            <button class="popup-close" id="close-help">✕</button>
+
+        <h1>Graph Guessing Game</h1>
+        Your goal is to find a function equivalent to the one being graphed, f(x, y). You have as many tries as nescessary. Have fun. You can use the function, f, but not in the solution.
+    </div>
+</div>
+<div class="overlay" id="popup-win">
+    <div class="popup">
+            <button class="popup-close" id="close-solution">✕</button>
+
+        <h1>You win!</h1>
+        Congratulations, you beat today's challenge in <div id="time-elapsed"></div>!
+        <button id="share-button" class="share-button">Share</button>
+    </div>
+</div>
+<script src="parsing.js"></script> 
+<script src="lexing.js"></script> 
+<script src="algebraic_transformations.js"></script>
+<script src="render.js"></script>    
+<script src="quad.js"></script>
+<script src="main.js"></script> 
+</body>
+</html>
