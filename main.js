@@ -223,7 +223,7 @@ document.getElementById('close-help').addEventListener('click', () => {
     document.getElementById('popup-help').classList.remove('open')
 })
 document.getElementById('share-button').addEventListener('click', async () => {
-    await navigator.clipboard.writeText("I just beat Graphle in " + formated_time + ". Play Here: joeberenshtain.github.io/Graphle")
+    await navigator.clipboard.writeText("I just beat Graphle in " + formated_time + ". Play Here: joeberenshtain.github.io/graphle")
 });
 function formatDuration(ms) {
   const totalSeconds = Math.floor(ms / 1000);
